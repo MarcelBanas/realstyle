@@ -1,0 +1,44 @@
+<nav class="bg-[#003d26] p-5 pb-7 shadow-lg rounded-b-lg sticky top-0 z-10">
+  <div class="container mx-auto flex flex-col items-center md:flex-row md:justify-between md:items-center">
+    <!-- Logo and Button Section -->
+    <div class="flex items-center justify-between w-full md:w-auto">
+      <!-- Logo Section with Image -->
+      <a href="/" class="flex items-center text-white text-4xl font-extrabold tracking-wide pl-2 pr-4">
+        <img src="../public/rslogo.png" alt="RealStyle Logo" class="h-12 mr-5 rounded-full" />
+        REAL STYLE s.r.o.
+      </a>
+
+      <!-- Mobile Menu Button, Right-Aligned on Mobile -->
+      <button
+        class="text-white md:hidden focus:outline-none"
+        aria-label="Toggle Menu"
+        onclick="document.querySelector('#mobile-menu').classList.toggle('hidden');"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Navigation Links for Mobile (Initially Hidden on Mobile) -->
+    <div id="mobile-menu" class="hidden md:flex w-full md:w-auto">
+      <ul class="flex flex-col md:flex-row md:space-x-8 mt-4 md:mt-0 md:flex-nowrap flex-wrap text-center">
+        <li class="w-full md:w-auto">
+          <a href="#onas" class="block py-2 px-5 text-xl text-white font-bold rounded-lg hover:bg-[#002b20] transition-all duration-300 ease-in-out">O nás</a>
+        </li>
+        <li class="w-full md:w-auto">
+          <a href="#sluzby" class="block py-2 px-5 text-xl text-white font-bold rounded-lg hover:bg-[#002b20] transition-all duration-300 ease-in-out">Služby</a>
+        </li>
+        <li class="w-full md:w-auto">
+          <a href="#certifikaty" class="block py-2 px-5 text-xl text-white font-bold rounded-lg hover:bg-[#002b20] transition-all duration-300 ease-in-out">Certifikáty</a>
+        </li>
+        <li class="w-full md:w-auto">
+          <a href="#kontakty" class="block py-2 px-5 text-xl text-white font-bold rounded-lg hover:bg-[#002b20] transition-all duration-300 ease-in-out">Kontakty</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Gradient Effect -->
+  <div class="absolute bottom-0 left-0 w-full h-4 bg-gradient-to-b from-[#003d26] to-[#001f1b]"></div>
+</nav>

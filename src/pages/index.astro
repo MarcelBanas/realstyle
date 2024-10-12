@@ -1,24 +1,190 @@
 ---
-// Component Imports
-import Button from '../components/Button.astro';
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/basics/astro-components/
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro + TailwindCSS</title>
-	</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/rslogo.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>REAL STYLE, s.r.o.</title>
+  </head>
 
-	<body>
-		<div class="grid place-items-center h-screen content-center">
-			<Button>Tailwind Button in Astro!</Button>
-			<a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a>
+  <body>
+	<style>
+		html {scroll-behavior: smooth;}
+	body {
+      background-image: url('/bg.jpg'); /* Adjust the path if necessary */
+      background-position: bottom right; /* Position the image */
+      background-repeat: no-repeat; /* Prevent the image from repeating */
+      opacity: 0.92; /* Set transparency to 30% */
+      position: relative; /* Ensure content is above the background */
+	  background-size: cover;
+    }
+
+    .main-content {
+      position: relative;
+      z-index: 1; /* Ensure this is above the background */
+    }
+
+	</style>
+    <Navigation />
+
+	<section id="onas" class="bg-gradient-to-b from-[#e0f2f0] to-[#c0e8e0] py-16 shadow-lg rounded-lg transition-transform duration-300 hover:scale-105" style="padding-top: 6rem;">
+		<div class="container mx-auto px-6">
+		  <h2 class="text-5xl font-extrabold text-[#003d26] mb-8 text-center tracking-wide">
+			O nás
+		  </h2>
+		  <p class="text-lg text-gray-800 leading-10 mb-6 font-bold">
+			Spoločnosť REAL STYLE, s.r.o. bola založená v mesiaci jún roku 2004. Jej vznik bol iniciovaný dopytom na trhu v oblasti stavebnej a remeselnej činnosti, ako aj možnosti využitia vlastných kapacít na uvedených trhoch. Postupne prechádzala rôznymi obdobiami vývoja a profiláciou svojich činností, až dospela k dnešnej podobe so svojim portfóliom ponúkaných služieb pre rôzne okruhy záujemcov, ako napr. :
+		  </p>
+		  <ul class="list-disc list-inside mb-6 font-bold">
+			<li class="text-lg text-gray-800">Pre priemyselných zákazníkov, výrobcov a dovozcov</li>
+			<li class="text-lg text-gray-800">Pre obce a mestá, domácnosti a občanov</li>
+			<li class="text-lg text-gray-800">Pre spoločnosti a inštitúcie</li>
+		  </ul>
+		  <p class="text-lg text-gray-800 leading-relaxed mb-6 font-bold">
+			kde v prevažnej miere v súčasnosti pôsobí v oblasti životného prostredia ako odborná konzultačná spoločnosť.
+		  </p>
+		  <p class="text-lg text-gray-800 leading-relaxed mb-6 font-bold">
+			Spoločnosť REAL STYLE, s.r.o. je schopná v rámci vlastných kapacít, ako aj za pomoci siete externých odborných spolupracovníkov a spolupracujúcich firiem, spoločností, reagovať na širokospektrálne požiadavky mnohých klientov, a zároveň dokáže úspešne riešiť ich problémy v oblastiach v ktorých dokáže poskytovať služby.
+		  </p>
+		  <p class="text-lg text-gray-800 leading-relaxed mb-6 font-bold">
+			Spoločnosť REAL STYLE, s.r.o. si zakladá na vysokej odbornosti a precíznosti poskytovaných služieb, ktorých predpokladom a garantmi sú odborníci s patričným vzdelaním, absolvovanými školeniami a kurzami, príslušnými oprávneniami a certifikátmi ako aj skúsenosťami a dlhoročnou praxou počas svojho pôsobenia na rôznych riadiacich pozíciách v spoločnostiach zaoberajúcimi sa odpadovým hospodárstvom a v orgánoch štátnej správy.
+		  </p>
+		  <p class="text-lg text-gray-800 leading-relaxed mb-6 font-bold">
+			Filozofiou spoločnosti REAL STYLE, s.r.o. je prispieť svojimi aktivitami k úspešnému riešeniu problémov u svojich zmluvných partneroch v oblastiach, kde poskytuje svoje služby, najme v oblasti odpadového hospodárstva, a tým prispievať k ochrane životného prostredia.
+		  </p>
+		  <p class="text-lg text-gray-800 leading-relaxed mb-6 font-bold">
+			Cieľom spoločnosti REAL STYLE, s.r.o. je ponúknuť a zabezpečiť svojim zmluvným partnerom ekologické aj ekonomické riešenie ich povinností, ktoré pomáha zvyšovať environmentálnu zodpovednosť, povedomie a prispieva k ochrane životného prostredia.
+		  </p>
 		</div>
-	</body>
+	</section>
+	
+	<section id="sluzby" class="py-16 bg-gradient-to-b from-[#c0e8e0] to-[#e0f2f0] relative shadow-lg rounded-lg transition-transform duration-300 hover:scale-105" style="padding-top: 6rem;">
+		<div class="max-w-screen-2xl mx-auto text-center px-4">
+			<h2 class="text-5xl font-extrabold text-[#003d26] mb-8 tracking-wide">
+				Služby
+			</h2>
+	
+			<!-- Card Container -->
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+				<!-- Card 3 -->
+				<div class="w-full p-6 bg-white border border-gray-300 shadow-lg rounded-lg text-left flex flex-col h-[500px] overflow-hidden relative">
+					<h3 class="text-xl font-bold text-[#003d26] mb-4">Poskytované služby v environmentálnej oblasti</h3>
+					<div class="overflow-y-auto h-full scrollbar-hide pr-4">
+						<p class="text-gray-700 mb-4">Komplexné zabezpečenie nakladania s odpadmi u zákazníka, firmy, spoločnosti a pod. Outsourcing odpadového hospodárstva pre podnikateľské subjekty, ktorý v sebe zahŕňa:</p>
+						<ul class="list-disc list-inside text-gray-700 space-y-2">
+							<li>Prevzatie zodpovednosti za podmienky prevádzky odpadového hospodárstva, ktoré sú dané orgánmi štátnej správy</li>
+							<li>Zodpovednosť za optimálne ekonomické a odborné riadenie prevádzky odpadového hospodárstva</li>
+							<li>Zodpovednosť za opravy a údržbu zariadení</li>
+							<li>Spolupráca pri príprave investícií do prevádzky odpadového hospodárstva</li>
+							<li>Tvorba ceny za služby na základe kalkulácie skutočných prevádzkových nákladov</li>
+						</ul>
+						<h4 class="font-bold mt-4">Komplexné odborné Environmentálne poradenstvo</h4>
+						<ul class="list-disc list-inside text-gray-700 space-y-2 mt-2">
+							<li>Vypracovanie technicko-ekonomických štúdií nakladania s odpadmi (zber, triedenie, preprava, zhromažďovanie, zhodnocovanie alebo zneškodňovanie odpadov)</li>
+							<li>Navrhovanie a realizácia systémov triedeného zberu odpadu u priemyselných zákazníkov, ako aj komunálnych zákazníkov, taktiež aj nebezpečných odpadov</li>
+							<li>Vypracovanie dokumentov v oblasti odpadového hospodárstva ako sú prevádzkové poriadky, technologické reglementy, opatrenia pre prípad havárie, havarijné poriadky a pod.</li>
+							<li>Vypracovanie žiadosti o vydanie potrebných súhlasov, rozhodnutí a iných dokumentov</li>
+							<li>Vypracovanie zámerov pre EIA procesy v odpadovom hospodárstve a v iných oblastiach</li>
+							<li>Vypracovanie posudkov v oblasti odpadového hospodárstva ako aj na úseku EIA</li>
+							<li>Zastupovanie klientov vo vzťahu k štátnej správe</li>
+							<li>Odborné školenia pre povinné osoby a iné dotknuté subjekty</li>
+							<li>Registrácia podľa požiadaviek a právnej úpravy v odpadovom hospodárstve</li>
+							<li>Audit odpadového hospodárstva v spoločnosti klienta</li>
+							<li>Sledovanie legislatívnych zmien a následne informovanie klientov</li>
+							<li>Vypracovanie Programov odpadového hospodárstva a Všeobecných záväzných nariadení (VZN) pre mestá a obce</li>
+							<li>Vypracovanie Programov odpadového hospodárstva pre ostatných pôvodcov odpadov</li>
+							<li>Registrácia Vašej spoločnosti v Registri povinných osôb a v Registri výrobcov elektrozariadení, ktorý vedie Ministerstvo životného prostredia SR</li>
+							<li>Vedenie a uchovávanie evidencie obalov a odpadov z obalov</li>
+							<li>Kvartálne a ročné ohlasovanie údajov z evidencie na Ministerstvo životného prostredia SR a Obvodné úrady životného prostredia</li>
+						</ul>
+					</div>
+					<!-- Scroll Indicator Arrow -->
+					<div class="absolute bottom-0 left-1/2 transform -translate-x-1/2">
+						<svg class="w-6 h-6 animate-bounce text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+						</svg>
+					</div>
+				</div>
+	
+				<!-- Card 2 -->
+				<div class="w-full p-6 bg-white border border-gray-300 shadow-lg rounded-lg text-left flex flex-col h-[500px]">
+					<h3 class="text-xl font-bold text-[#003d26] mb-4">Sprostredkovateľská činnosť</h3>
+					<ul class="list-disc list-inside text-gray-700 space-y-2">
+						<li>Sprostredkovanie predaja, prenájmu a kúpy nehnuteľností (realitná činnosť)</li>
+						<li>Práca so stavebnými mechanizmami</li>
+						<li>Pripravné práce pre stavbu, demoláciu a zemné práce</li>
+						<li>Stavebnícke a demolačné stroje a zariadenia bez obsluhujúceho personálu</li>
+						<li>Stavebné práce (maliarske, natieračské a omietkárske práce, montáž sadrokartónu, obkladanie stien a kladenie dlažbových krytín)</li>
+					</ul>
+				</div>
+	
+				<!-- Card 1 -->
+				<div class="w-full p-6 bg-white border border-gray-300 shadow-lg rounded-lg text-left flex flex-col h-[500px]">
+					<h3 class="text-xl font-bold text-[#003d26] mb-4">Zabezpečenie ďalších služieb a činností</h3>
+					<ul class="list-disc list-inside text-gray-700 space-y-2">
+						<li>Reklamná a propagačná činnosť organizácií a spoločností</li>
+						<li>Prieskum trhu a verejnej mienky</li>
+						<li>Organizovanie kurzov, školení právnických a fyzických osôb</li>
+						<li>Sadovnícke a parkové úpravy, záhradníctvo</li>
+						<li>Nákladná cestná doprava do 3,5 t</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	
+	
+	<style>
+		/* Hide scrollbar for Chrome, Safari and Opera */
+		.scrollbar-hide::-webkit-scrollbar {
+			display: none;
+		}
+	
+		/* Hide scrollbar for IE and Edge */
+		.scrollbar-hide {
+			-ms-overflow-style: none;  /* IE and Edge */
+			scrollbar-width: none;  /* Firefox */
+		}
+	</style>
+	
+
+	<section id="certifikaty" class="py-16 bg-gradient-to-b from-[#e0f2f0] to-[#c0e8e0] relative transition-transform duration-300 hover:scale-105" style="padding-top: 6rem;">
+		<div class="max-w-6xl mx-auto text-center px-4">
+			<h2 class="text-5xl font-extrabold text-[#003d26] mb-8 tracking-wide">
+				Certifikáty
+			</h2>
+	
+			<!-- Certificate Card Container -->
+			<div class="w-full p-6 bg-white border border-gray-300 shadow-lg rounded-lg text-left">
+				<h3 class="text-2xl font-bold text-[#003d26] mb-4">Integrovaný manažérsky systém</h3>
+				<p class="text-gray-700 mb-4">
+					Naša spoločnosť sa na základe potrieb, ďalšieho napredovania a rozvoja spoločnosti k stále vyššej kvalite poskytovaných služieb smerom ku klientom, rozhodla zaviesť <b>Integrovaný Manažérsky Systém (IMS)</b>, a to uplatnením požiadaviek na Systém kvality podľa medzinárodnej normy ISO 9001:2000 a Systém environmentálneho manažérstva podľa ISO 14001:2004.
+				</p>
+				<p class="text-gray-700 mb-4">
+					V súčasnej dobe začal proces implementácie IMS, pričom ukončením celého procesu bude záverečný audit, ktorý zhodnotí a skonštatuje či sú stanovené všetky zhody oboch noriem na udelenie Certifikátov Systému manažmentu kvality podľa ISO 9001:2000 a Environmentálneho manažérskeho systému podľa ISO 14001:2004.
+				</p>
+				<p class="text-gray-700 mb-4">
+					Certifikáty požadujeme udeliť pre oblasť „Komplexných služieb v odpadovom hospodárstve“, pod ktorú spadajú procesy:
+				</p>
+				<ul class="list-disc list-inside text-gray-700 space-y-2">
+					<li>zber a preprava odpadov</li>
+					<li>zneškodňovanie a zhodnocovanie odpadov</li>
+					<li>prevádzkovanie zberných dvorov</li>
+					<li>prevádzkovanie zariadení na triedenie odpadu</li>
+					<li>komplexné poradenstvo v oblasti odpadového hospodárstva</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	
+
+    <Footer />
+  </body>
 </html>
