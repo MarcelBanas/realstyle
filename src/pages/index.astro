@@ -1,6 +1,7 @@
 ---
 import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
+import Accordion from '../components/Accordion.astro';
 ---
 
 <html lang="en">
@@ -32,36 +33,12 @@ import Footer from '../components/Footer.astro';
 	</style>
     <Navigation />
 
-	<section id="onas" class="bg-gradient-to-b from-[#e0f2f0] to-[#c0e8e0] py-16 shadow-lg rounded-lg transition-transform duration-300 hover:scale-105" style="padding-top: 6rem;">
+    <section id="onas" class="bg-gradient-to-b from-[#e0f2f0] to-[#c0e8e0] py-16 shadow-lg rounded-lg transition-transform duration-300 hover:scale-105" style="padding-top: 6rem;">
 		<div class="container mx-auto px-6">
-		  <h2 class="text-5xl font-extrabold text-[#003d26] mb-8 text-center tracking-wide">
-			O nás
-		  </h2>
-		  <p class="text-lg text-gray-800 leading-10 mb-6 font-bold">
-			Spoločnosť REAL STYLE, s.r.o. bola založená v mesiaci jún roku 2004. Jej vznik bol iniciovaný dopytom na trhu v oblasti stavebnej a remeselnej činnosti, ako aj možnosti využitia vlastných kapacít na uvedených trhoch. Postupne prechádzala rôznymi obdobiami vývoja a profiláciou svojich činností, až dospela k dnešnej podobe so svojim portfóliom ponúkaných služieb pre rôzne okruhy záujemcov, ako napr. :
-		  </p>
-		  <ul class="list-disc list-inside mb-6 font-bold">
-			<li class="text-lg text-gray-800">Pre priemyselných zákazníkov, výrobcov a dovozcov</li>
-			<li class="text-lg text-gray-800">Pre obce a mestá, domácnosti a občanov</li>
-			<li class="text-lg text-gray-800">Pre spoločnosti a inštitúcie</li>
-		  </ul>
-		  <p class="text-lg text-gray-800 leading-relaxed mb-6 font-bold">
-			kde v prevažnej miere v súčasnosti pôsobí v oblasti životného prostredia ako odborná konzultačná spoločnosť.
-		  </p>
-		  <p class="text-lg text-gray-800 leading-relaxed mb-6 font-bold">
-			Spoločnosť REAL STYLE, s.r.o. je schopná v rámci vlastných kapacít, ako aj za pomoci siete externých odborných spolupracovníkov a spolupracujúcich firiem, spoločností, reagovať na širokospektrálne požiadavky mnohých klientov, a zároveň dokáže úspešne riešiť ich problémy v oblastiach v ktorých dokáže poskytovať služby.
-		  </p>
-		  <p class="text-lg text-gray-800 leading-relaxed mb-6 font-bold">
-			Spoločnosť REAL STYLE, s.r.o. si zakladá na vysokej odbornosti a precíznosti poskytovaných služieb, ktorých predpokladom a garantmi sú odborníci s patričným vzdelaním, absolvovanými školeniami a kurzami, príslušnými oprávneniami a certifikátmi ako aj skúsenosťami a dlhoročnou praxou počas svojho pôsobenia na rôznych riadiacich pozíciách v spoločnostiach zaoberajúcimi sa odpadovým hospodárstvom a v orgánoch štátnej správy.
-		  </p>
-		  <p class="text-lg text-gray-800 leading-relaxed mb-6 font-bold">
-			Filozofiou spoločnosti REAL STYLE, s.r.o. je prispieť svojimi aktivitami k úspešnému riešeniu problémov u svojich zmluvných partneroch v oblastiach, kde poskytuje svoje služby, najme v oblasti odpadového hospodárstva, a tým prispievať k ochrane životného prostredia.
-		  </p>
-		  <p class="text-lg text-gray-800 leading-relaxed mb-6 font-bold">
-			Cieľom spoločnosti REAL STYLE, s.r.o. je ponúknuť a zabezpečiť svojim zmluvným partnerom ekologické aj ekonomické riešenie ich povinností, ktoré pomáha zvyšovať environmentálnu zodpovednosť, povedomie a prispieva k ochrane životného prostredia.
-		  </p>
+		  <h2 class="text-5xl font-extrabold text-[#003d26] mb-8 text-center tracking-wide">O nás</h2>
+		  <Accordion />
 		</div>
-	</section>
+	  </section>
 	
 	<section id="sluzby" class="py-16 bg-gradient-to-b from-[#c0e8e0] to-[#e0f2f0] relative shadow-lg rounded-lg transition-transform duration-300 hover:scale-105" style="padding-top: 6rem;">
 		<div class="max-w-screen-2xl mx-auto text-center px-4">
